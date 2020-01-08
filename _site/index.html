@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lange="en">
+  <head>
+    <!-- Meta tags -->
+    <base href="{{ site.base }}" />
+  
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="keywords" content="community, design" />
+    <meta property="og:title" content="Communty at Design Co" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="{{ site.url }}{{ site.base }}assets/images/preview.png"
+    />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+  
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-84330975-6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+  
+      gtag("config", "UA-84330975-6");
+    </script>
+  
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/images/favicons/safari-pinned-tab.svg"
+      color="#263238"
+    />
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#263238" />
+    <meta
+      name="msapplication-config"
+      content="assets/images/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  
+    <!--  CSS -->
+    <!-- <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl}}">  -->
+    <link rel="stylesheet" href="/assets/css/main.css"> 
+
+    <title>Community at Design Co</title>
+  </head>
+
+  <body>
+    <div id="body-wrapper">
+      <div class="outer-container">
+        <header class="pt-2">
+          <div id="stride-logo" class="portable--mb-1">
+            <a href="/">
+              <img src="assets/images/logo.svg" alt="Design Co">
+            </a>
+          </div>
+        </header>
+      </div>
+      <main>
+        <article>
+          {{ content }}
+        </article>
+      </main>
+      <div class="outer-container">
+        <footer>
+          <p>
+            Made with <span class="text-red">♥</span>
+            <a href="http://ucsddesign.co" target="_blank" class="highligh">
+              Design Co
+            </a>
+          </p>
+          <a href="mailto:hello@ucsddesign.co">hello@ucsddesign.co</a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
